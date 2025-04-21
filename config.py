@@ -3,7 +3,7 @@ N_SAMPLES = 10000          # Number of synthetic data points
 NOISE_STD = 5.0            # Standard deviation of Gaussian noise
 
 # === Data Generation Formula (Ground Truth) ===
-TRUE_WEIGHTS = [40, 8, 2]  # Coefficients for Area, Location Quality, Renovation Quality
+TRUE_WEIGHTS = [50, 8, 2]  # Coefficients for Area, Location Quality, Renovation Quality
 TRUE_BIAS = 10             # Bias term
 
 # === Training Configuration ===

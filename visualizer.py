@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from config import TRUE_WEIGHTS, TRUE_BIAS
 
 # Plot predicted vs actual values on test set
 def plot_real_vs_predicted(y_true, y_pred):
@@ -42,7 +43,7 @@ def plot_prediction_convergence(epoch_predictions, y_true, index=0):
 
 # Plot how each weight (denormalized) evolved over training
 def plot_weights_evolution(epoch_weights, mean, std):
-    true_weights = [40, 8, 2, 10]  # Known ground truth
+    true_weights = TRUE_WEIGHTS + [TRUE_BIAS]  # Known ground truth
     labels = ["Area", "Location Quality", "Renovation Quality", "Bias"]
     colors = ["blue", "green", "orange", "purple"]
 
